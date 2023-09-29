@@ -9,7 +9,7 @@
 ----
 **Pinball Game:** 0:00 - 1:08
 
-A pinball game was created with working flippers, pause, play and restart functionality. When the game starts, all balls will fall from the top and begin colliding with other objects in the scene. On losing all the given balls, the game will end and show the ending screen with your final score. 
+A pinball game was created with working flippers, pause, play and restart functionality. When the game starts, all balls will fall from the top and begin colliding with other objects in the scene. On losing all the given balls, the game will end and show the ending screen with your final score. The flippers rotate around their base point, and gain rotational velocity when they move. This is converted to linear velocity when applied in flipper collision, which also takes into account the distance from the rotation point.
 
 ---
 **Score Display:** 0:18 - 1:08
@@ -29,7 +29,7 @@ The circle objects are reactive and upon collision with pinball will increase in
 ---
 **Sound Effects:** 1:28 - 1:37
 
-The circle objects also play a "ding" sound affect with struck by a pinball.
+The circle objects also play a "ding" sound affect with struck by a pinball. This was implemented using the Sound library.
 
 ---
 **Line-Segment/Polygon Obstacles:** 1:50 - 2:48
@@ -49,7 +49,7 @@ The background is textured a festive christmas theme, and matches the layout of 
 ---
 **Basic Pinball Dynamics:** 3:04 - 3:40
 
-To simulate basic pinball dynamics, a gravitational acceleration was combined with the pinball mass to create a gravitational force, which was then applied to the pinballs velocity. This created a more realistic simulation of a ball falling, as it speeds up over time. Collisions were calculated using the initial velocities and masses of both objects, in order to determine the final velocities and directions that they will bounce off.
+To simulate basic pinball dynamics, a gravitational acceleration was combined with the pinball mass to create a gravitational force, which was then applied to the pinballs velocity. This created a more realistic simulation of a ball falling, as it speeds up as it falls. Collisions were calculated using the initial velocities and masses of both objects, in order to determine the final velocities and directions that they will bounce off. A coefficient of restitution was also applied to the resulting velocity to simulate kinetic energy lost in the collision.
 
 ---
 **Multiple Balls Interacting:** 3:18 - 3:40
@@ -69,11 +69,15 @@ Image Captures
 
 Difficulties
 ---
+Flipper rotation
+Balls phasing through obstacles
 
 ---
 ***Source code download:*** <a href= "CSCI5611_Project_1.pde" download>Download Game Code</a>
 
 All processing code was written by me. Included in the above file is a collision library, a Vec2 library to handle 2D vectors, object classes to hold obstacle information (Circles,Boxes,Lines), and the code for the pinball game. The Vec2 library was modified from Professor Guy's given version. The processing <a href="https://processing.org/reference/libraries/sound/index.html"> Sound Library </a> was used to implement the sound effects for the game. Other code models and structuring were used from Professor Guy's slides and code examples as a basis for things like implementing gravity, collision detection and calculating new velocity/direction, and flippers. <a href="https://processing.org/reference/"> Processing documentation </a> was also referenced to explore built in functions and their functionalities (Some examples are the PImage and PFont classes for texturing and adding text to the scene). 
 
+The background texture was sourced from: <a href="https://www.vecteezy.com/photo/26750034-christmas-fir-branch-background "> Vecteezy </a>
+The ding sound effect was sourced from:<a href="http://soundjax.com/ding-1.html"> Soundjax </a> 
 
 ---
