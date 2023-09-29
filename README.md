@@ -57,6 +57,7 @@ To simulate basic pinball dynamics, a gravitational acceleration was combined wi
 There are ten pinballs dropped into the scene when the game starts. Throughout the game they will collide with each other and other obstacles in the scene.
 
 ---
+
 Image Captures
 ---
 
@@ -65,6 +66,7 @@ Image Captures
 |<img src="./docs/assets/gamestart.JPG" width="200" height="300"> | <img src="./docs/assets/midgame.JPG" width="200" height="300"> |  <img src="./docs/assets/gameover.JPG" width="200" height="300">  |          
 
 ---
+
 Difficulties
 ---
 
