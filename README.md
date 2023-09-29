@@ -25,6 +25,12 @@
 
 **Multiple Balls Interacting:** 3:18 - 3:40
 
+   
+Game Start Screen:          | Mid Game Screen:          |Game Over Screen:     
+:-------------------------:|:-------------------------:|:-------------------------------------:
+<img src="/docs/assets/gamestart.JPG" width="200" height="300"> | <img src="/docs/assets/midgame.JPG" width="200" height="300"> |  <img src="/docs/assets/gameover.JPG" width="200" height="300">         
+ ---------------------------------------------------------------------------------------------------------------------------               
+
 ---
 ***Source code download:*** <a href= "CSCI5611_Project_1.pde" download>Download Game Code</a>
 ---
