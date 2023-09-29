@@ -26,5 +26,5 @@
 **Multiple Balls Interacting:** 3:18 - 3:40
 
 ---
-Source code download: <a href= "CSCI5611_Project_1.pde" download>Download Game Code</a>
-
+***Source code download:*** <a href= "CSCI5611_Project_1.pde" download>Download Game Code</a>
+---
