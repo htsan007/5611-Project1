@@ -1,9 +1,9 @@
-# 5611-Project1
+# 5611-Project1 Pinball Game
 
 **Project Overview video:**
 {% include youtube.html id="IW7sk3QoJFE" %}
 
-**Timestamps:**
+**Timestamps and List of attempted features:**
 ---
 **Pinball Game:** 0:00 - 1:08
 
