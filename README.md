@@ -79,6 +79,6 @@ All processing code was written by me. Included in the above file is a collision
 
 The background texture was sourced from: <a href="https://www.vecteezy.com/photo/26750034-christmas-fir-branch-background "> Vecteezy </a>
 
-The ding sound effect was sourced from:<a href="http://soundjax.com/ding-1.html"> Soundjax </a> 
+The ding sound effect was sourced from:<a href="http://soundjax.com/ding-1.html "> Soundjax </a> 
 
 ---
