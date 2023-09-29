@@ -78,6 +78,7 @@ Balls phasing through obstacles
 All processing code was written by me. Included in the above file is a collision library, a Vec2 library to handle 2D vectors, object classes to hold obstacle information (Circles,Boxes,Lines), and the code for the pinball game. The Vec2 library was modified from Professor Guy's given version. The processing <a href="https://processing.org/reference/libraries/sound/index.html"> Sound Library </a> was used to implement the sound effects for the game. Other code models and structuring were used from Professor Guy's slides and code examples as a basis for things like implementing gravity, collision detection and calculating new velocity/direction, and flippers. <a href="https://processing.org/reference/"> Processing documentation </a> was also referenced to explore built in functions and their functionalities (Some examples are the PImage and PFont classes for texturing and adding text to the scene). 
 
 The background texture was sourced from: <a href="https://www.vecteezy.com/photo/26750034-christmas-fir-branch-background "> Vecteezy </a>
+
 The ding sound effect was sourced from:<a href="http://soundjax.com/ding-1.html"> Soundjax </a> 
 
 ---
