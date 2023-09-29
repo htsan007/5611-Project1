@@ -39,7 +39,7 @@ There are both boxes and line-segment obstacles. The line-segments take the form
 ---
 **Multiple Material Types:** 1:51 - 2:48
 
-The box obstacles do have multiple material types. The brown-rectangle reduces the mass of the colliding pinball, and also changes the pinball color to blue. This gives the effect of reduced gravity on the pinball. The pink boxes have a stick property to them, and when a pinball collides with it, it will get stuck to the box for the rest of the game.
+The box obstacles do have multiple material types. The brown-rectangle reduces the mass of the colliding pinball, and also changes the pinball color to blue. This gives the effect of reduced gravity on the pinball. Once the pinballs turn blue, colliding with the circle obstacles will reset their mass and color back to red. The pink boxes have a stick property to them, and when a pinball collides with it, it will get stuck to the box for the rest of the game.
 
 ---
 **Textured Background:** 2:49 - 3:03
@@ -69,8 +69,9 @@ Image Captures
 
 Difficulties
 ---
-Flipper rotation
-Balls phasing through obstacles
+One point of difficulty for me was getting the flipper rotation to work correctly. A lot of times the flipper hitbox was larger or displaced from the flipper displayed in the scene. I realized that I was using rotate() incorrectly, as it rotates the whole scene around the center point. To fix this I used the translate function, to set the origin of the scene to the flippers rotation points, before drawing. In order to keep these changes only affecting the flipper, I used pushMatrix and popMatrix so that the operations wouldn't affect anything else in the scene.
+
+Another issue I had was the pinballs gaining an incredible amount of speed and phasing through my obstacles, particularily the thinner ones like the flipper arms or brown-rectangle. The fact it happened at high speeds told me it was less likely to be a problem with my collision detection, but with the time step where the scene is updated. In one time step if would be on one side of the object and on the other side in the next, due to how fast it was going. I implemented multiple ways to prevent this. First I decreased dt, delta time, so that the time step between position updates was smaller. In theory this would allow for more steps to be made, and give more chances to pick up on a collision. The second prevention was to simply put a hard cap on the velocity that a pinball can reach. Through trial and error I picked a value that kept the pinballs from moving too fast while also keeping their movement reaistic.
 
 ---
 ***Source code download:*** <a href= "CSCI5611_Project_1.pde" download>Download Game Code</a>
