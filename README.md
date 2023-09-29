@@ -59,6 +59,7 @@ There are ten pinballs dropped into the scene when the game starts. Throughout t
 ---
 Image Captures
 ---
+
 |Game Start Screen:          | Mid Game Screen:          |Game Over Screen:    | 
 |-------------------------|-------------------------|-------------------------------------|
 |<img src="./docs/assets/gamestart.JPG" width="200" height="300"> | <img src="./docs/assets/midgame.JPG" width="200" height="300"> |  <img src="./docs/assets/gameover.JPG" width="200" height="300">  |          
